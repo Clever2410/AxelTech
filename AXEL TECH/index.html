@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Axel Tech – Soluciones Tecnológicas</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;600;900&family=DM+Sans:ital,wght@0,300;0,400;0,500;1,300&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- ═══════════════════════════════════════════
+       HEADER
+  ═══════════════════════════════════════════ -->
+  <header id="header">
+    <div class="nav-inner">
+      <a href="#inicio" class="logo">
+        <div class="logo-icon">
+          <img src="Imagenes/AxelTech.png" alt="Axel Tech">
+          <span>AT</span>
+        </div>
+        <div class="logo-text">
+          <span class="logo-name">Axel<em>Tech</em></span>
+          <span class="logo-sub">Servicio Técnico</span>
+        </div>
+      </a>
+
+      <nav id="mainNav">
+        <a href="#inicio">Inicio</a>
+        <a href="#servicios">Servicios</a>
+        <a href="#diseno">Diseño Gráfico</a>
+        <a href="#portafolio">Portafolio</a>
+        <a href="#contacto">Contacto</a>
+      </nav>
+
+      <button class="hamburger" id="hamburger" aria-label="Abrir menú">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+
+    <!-- Mobile drawer -->
+    <div class="mobile-drawer" id="mobileDrawer">
+      <a href="#inicio">Inicio</a>
+      <a href="#servicios">Servicios</a>
+      <a href="#diseno">Diseño Gráfico</a>
+      <a href="#portafolio">Portafolio</a>
+      <a href="#contacto">Contacto</a>
+    </div>
+  </header>
+
+  <!-- ═══════════════════════════════════════════
+       HERO
+  ═══════════════════════════════════════════ -->
+  <section id="inicio" class="hero">
+    <canvas id="heroCanvas"></canvas>
+
+    <div class="hero-content">
+      <div class="hero-badge" data-reveal>
+        <span class="dot"></span> Disponible ahora
+      </div>
+
+      <h1 data-reveal>
+        Soluciones tecnológicas<br>
+        <span class="gradient-text">a tu alcance</span>
+      </h1>
+
+      <p class="hero-sub" data-reveal>
+        Reparación, mantenimiento y diseño gráfico profesional.<br>
+        Atendemos en taller y a domicilio.
+      </p>
+
+      <div class="hero-actions" data-reveal>
+        <!-- 🔧 EDITAR: Cambia 59173955236 por tu número -->
+        <a href="https://wa.me/59173955236?text=Hola%2C%20me%20interesa%20un%20servicio" target="_blank" class="btn-primary">
+          <i class="fab fa-whatsapp"></i> Contáctanos ahora
+        </a>
+        <a href="#servicios" class="btn-ghost">
+          Ver servicios <i class="fas fa-arrow-down"></i>
+        </a>
+      </div>
+
+      <div class="hero-stats" data-reveal>
+        <div class="stat-item">
+          <span class="stat-num" data-count="200">0</span><span class="stat-plus">+</span>
+          <span class="stat-lbl">Equipos reparados</span>
+        </div>
+        <div class="stat-divider"></div>
+        <div class="stat-item">
+          <span class="stat-num" data-count="5">0</span><span class="stat-plus">★</span>
+          <span class="stat-lbl">Calificación</span>
+        </div>
+        <div class="stat-divider"></div>
+        <div class="stat-item">
+          <span class="stat-num" data-count="24">0</span><span class="stat-plus">h</span>
+          <span class="stat-lbl">Respuesta rápida</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="hero-scroll-hint">
+      <div class="scroll-wheel"></div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════════
+       SERVICIOS TÉCNICOS
+  ═══════════════════════════════════════════ -->
+  <section id="servicios">
+    <div class="container">
+      <div class="section-head" data-reveal>
+        <span class="chip">Servicios Técnicos</span>
+        <h2>Reparación &amp; Mantenimiento</h2>
+        <p>Diagnóstico rápido, solución garantizada. Llevamos años cuidando tus equipos.</p>
+      </div>
+
+      <div class="services-grid" id="servicesGrid">
+        <!-- Renderizado por JS desde main.js -->
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════════
+       DISEÑO GRÁFICO
+  ═══════════════════════════════════════════ -->
+  <section id="diseno" class="section-alt">
+    <div class="container">
+      <div class="section-head" data-reveal>
+        <span class="chip">Diseño Gráfico</span>
+        <h2>Diseño Profesional</h2>
+        <p>Piezas visuales únicas para tus eventos y negocios. Entrega digital rápida.</p>
+      </div>
+
+      <div class="design-grid" id="designGrid">
+        <!-- Renderizado por JS desde main.js -->
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════════
+       PORTAFOLIO / BLOG
+  ═══════════════════════════════════════════ -->
+  <section id="portafolio">
+    <div class="container">
+      <div class="section-head" data-reveal>
+        <span class="chip">Portafolio</span>
+        <h2>Trabajos Realizados</h2>
+        <p>Una muestra de nuestros proyectos más recientes.</p>
+      </div>
+
+      <!-- Filtros -->
+      <div class="portfolio-filters" id="portfolioFilters" data-reveal>
+        <button class="filter-btn active" data-filter="all">Todos</button>
+        <button class="filter-btn" data-filter="diseno">Diseño</button>
+        <button class="filter-btn" data-filter="tecnico">Técnico</button>
+      </div>
+
+      <div class="portfolio-grid" id="portfolioGrid">
+        <!-- Renderizado por JS desde main.js -->
+      </div>
+
+      <div class="portfolio-load" data-reveal>
+        <button class="btn-ghost" id="loadMoreBtn">
+          <i class="fas fa-plus"></i> Ver más trabajos
+        </button>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════════
+       CONTACTO
+  ═══════════════════════════════════════════ -->
+  <section id="contacto" class="section-alt">
+    <div class="container">
+      <div class="section-head" data-reveal>
+        <span class="chip">Contacto</span>
+        <h2>Hablemos</h2>
+        <p>Escríbenos y te respondemos en minutos.</p>
+      </div>
+
+      <div class="contact-wrapper">
+        <div class="contact-info" data-reveal>
+          <div class="contact-card">
+            <!-- 🔧 EDITAR: Cambia número y ciudad -->
+            <div class="contact-row">
+              <div class="contact-icon"><i class="fab fa-whatsapp"></i></div>
+              <div>
+                <span class="contact-label">WhatsApp</span>
+                <a href="https://wa.me/59173955236" target="_blank" class="contact-value">+591 739 55 2 36</a>
+              </div>
+            </div>
+            <div class="contact-row">
+              <div class="contact-icon"><i class="fas fa-map-marker-alt"></i></div>
+              <div>
+                <span class="contact-label">Ubicación</span>
+                <span class="contact-value">Guayaramerín, Bolivia</span>
+              </div>
+            </div>
+            <div class="contact-row">
+              <div class="contact-icon"><i class="fas fa-clock"></i></div>
+              <div>
+                <span class="contact-label">Horario</span>
+                <span class="contact-value">Lun – Sáb: 8:00 – 20:00</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="social-links">
+            <!-- 🔧 EDITAR: Cambia href por tus perfiles reales -->
+            <a href="https://facebook.com/axeltech"  target="_blank" class="social-link" data-tip="Facebook"><i class="fab fa-facebook-f"></i></a>
+            <a href="https://instagram.com/axeltech" target="_blank" class="social-link" data-tip="Instagram"><i class="fab fa-instagram"></i></a>
+            <a href="https://tiktok.com/@axeltech"   target="_blank" class="social-link" data-tip="TikTok"><i class="fab fa-tiktok"></i></a>
+            <a href="https://wa.me/59173955236"      target="_blank" class="social-link" data-tip="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+          </div>
+        </div>
+
+        <form class="contact-form" id="contactForm" data-reveal>
+          <div class="form-row">
+            <div class="form-group">
+              <label for="fname">Nombre</label>
+              <input id="fname" type="text" placeholder="Tu nombre" required />
+              <span class="form-error" id="fnameError"></span>
+            </div>
+            <div class="form-group">
+              <label for="fphone">WhatsApp</label>
+              <input id="fphone" type="tel" placeholder="+591 7X XXX XXX" />
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="fservice">Servicio de interés</label>
+            <select id="fservice">
+              <option value="">Selecciona un servicio...</option>
+              <option>Mantenimiento de computadora</option>
+              <option>Reparación de computadora</option>
+              <option>Servicio a domicilio</option>
+              <option>Reparación de impresora EPSON</option>
+              <option>Diseño gráfico</option>
+              <option>Otro</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="fmsg">Mensaje</label>
+            <textarea id="fmsg" rows="4" placeholder="¿En qué podemos ayudarte?" required></textarea>
+            <span class="char-count" id="charCount">0 / 300</span>
+          </div>
+          <button type="submit" class="btn-primary full-width" id="submitBtn">
+            <i class="fab fa-whatsapp"></i> <span>Enviar por WhatsApp</span>
+          </button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════════
+       FOOTER
+  ═══════════════════════════════════════════ -->
+  <footer>
+    <div class="footer-inner">
+      <div class="footer-brand">
+        <div class="logo">
+          <div class="logo-icon"><span>AT</span></div>
+          <div class="logo-text">
+            <span class="logo-name">Axel<em>Tech</em></span>
+          </div>
+        </div>
+        <p class="footer-tag">Servicio técnico confiable en computadoras e impresoras</p>
+      </div>
+
+      <nav class="footer-nav">
+        <a href="#inicio">Inicio</a>
+        <a href="#servicios">Servicios</a>
+        <a href="#diseno">Diseño Gráfico</a>
+        <a href="#portafolio">Portafolio</a>
+        <a href="#contacto">Contacto</a>
+      </nav>
+
+      <div class="footer-social">
+        <a href="https://facebook.com/axeltech"  target="_blank" class="social-link"><i class="fab fa-facebook-f"></i></a>
+        <a href="https://instagram.com/axeltech" target="_blank" class="social-link"><i class="fab fa-instagram"></i></a>
+        <a href="https://tiktok.com/@axeltech"   target="_blank" class="social-link"><i class="fab fa-tiktok"></i></a>
+      </div>
+
+      <p class="footer-copy">© <span id="footerYear"></span> Axel Tech · Todos los derechos reservados</p>
+    </div>
+  </footer>
+
+  <!-- ═══════════════════════════════════════════
+       FLOATING WHATSAPP
+  ═══════════════════════════════════════════ -->
+  <!-- 🔧 EDITAR: Cambia 59173955236 por tu número -->
+  <a href="https://wa.me/59173955236?text=Hola%2C%20me%20interesa%20un%20servicio%20de%20Axel%20Tech"
+     target="_blank" class="wa-float" id="waFloat" aria-label="Escribir por WhatsApp">
+    <i class="fab fa-whatsapp"></i>
+    <span class="wa-tooltip">¡Escríbenos!</span>
+  </a>
+
+  <!-- Lightbox overlay -->
+  <div class="lightbox" id="lightbox">
+    <button class="lightbox-close" id="lightboxClose"><i class="fas fa-times"></i></button>
+    <div class="lightbox-body" id="lightboxBody"></div>
+  </div>
+
+  <script src="main.js"></script>
+</body>
+</html>
